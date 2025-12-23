@@ -1,28 +1,49 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Harrison Akello — Geospatial Portfolio</title>
-  <link rel="stylesheet" href="styles/variables.css">
-  <link rel="stylesheet" href="styles/main.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container">
-      <h1>Harrison Akello</h1>
-      <p class="headline">GIS Analyst | Remote Sensing Expert | Researcher | Data Analyst | Climate Champion</p>
-      <p class="location">Maseno University • Kenya</p>
-      <div class="contact">
-        <a href="mailto:akelloharry1121@gmail.com" class="btn">akelloharry1121@gmail.com</a>
-        <a href="#" class="link muted">LinkedIn</a>
-        <a href="#" class="link muted">GitHub</a>
-      </div>
-    </div>
-  </header>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Harrison Akello — Geospatial Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
 
-  <main class="container">
-    <section id="about" class="card">
+  <body>
+    <nav class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="index.html">Harrison Akello</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects/index.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="container">
+      <section class="hero card" aria-label="Introduction">
+        <div class="hero-inner">
+          <div class="hero-image">
+            <img src="assets/profile.jpg" alt="Harrison Akello profile photo">
+          </div>
+          <div class="hero-content">
+            <h1>Harrison Akello</h1>
+            <p class="headline">GIS Analyst | Remote Sensing Expert | Researcher | Data Analyst | Climate Champion</p>
+            <p class="location">Maseno University • Kenya</p>
+            <p class="contact-line"><a class="btn" href="mailto:akelloharry1121@gmail.com">akelloharry1121@gmail.com</a>
+            <span class="muted"> &nbsp;•&nbsp; </span>
+            <a class="link" href="#">LinkedIn</a>
+            <span class="muted"> &nbsp;•&nbsp; </span>
+            <a class="link" href="#">GitHub</a></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="card">
       <h2>About Me</h2>
       <p>
         I am a Geospatial Information Science student at Maseno University, passionate about harnessing spatial data, remote sensing, and GeoAI to address environmental and urban challenges. My work focuses on applying GIS, data analytics, and spatial modeling to real-world problems such as air quality mapping, climate vulnerability assessment, and urban resilience planning.
@@ -97,8 +118,8 @@
     </section>
   </main>
 
-  <footer class="site-footer muted">
-    <div class="container">© Harrison Akello — Geospatial Portfolio</div>
-  </footer>
-</body>
-</html>
+    <footer class="site-footer muted">
+      <div class="container">© Harrison Akello — Geospatial Portfolio</div>
+    </footer>
+  </body>
+  </html>
