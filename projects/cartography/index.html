@@ -8,9 +8,20 @@
   <link rel="stylesheet" href="../../styles/main.css">
   <style>
     .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 20px; padding: 20px 0; }
-    .gallery-item { border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: all 0.3s ease; }
+    .gallery-item { border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: all 0.3s ease; background-color: #f0f0f0; }
     .gallery-item:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.15); }
-    .gallery-item img { width: 100%; height: 300px; object-fit: cover; display: block; }
+    .gallery-item img { width: 100%; height: 300px; object-fit: contain; display: block; padding: 10px; box-sizing: border-box; }
+    .gallery-caption { padding: 10px; text-align: center; color: #666; font-size: 0.9rem; }
+    
+    @media (max-width: 768px) {
+      .gallery { grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
+      .gallery-item img { height: 200px; }
+    }
+    
+    @media (max-width: 576px) {
+      .gallery { grid-template-columns: 1fr; }
+      .gallery-item img { height: 250px; }
+    }
   </style>
 </head>
 <body>
@@ -39,16 +50,32 @@
       
       <div class="gallery">
         <div class="gallery-item">
-          <img src="../../assets/air-quality.png" alt="Air Quality Map">
-          <p style="padding: 10px; text-align: center; color: #666;">Air Quality & Environmental Mapping</p>
+          <img src="../../assets/cartography-main.jpg" alt="Cartography Design">
+          <div class="gallery-caption">Cartography & Map Design</div>
         </div>
         <div class="gallery-item">
-          <img src="../../assets/climate-risk.png" alt="Climate Risk Map">
-          <p style="padding: 10px; text-align: center; color: #666;">Climate Risk & Vulnerability Assessment</p>
+          <img src="../../assets/map-1.png" alt="Map 1">
+          <div class="gallery-caption">Geospatial Analysis</div>
         </div>
         <div class="gallery-item">
-          <img src="../../assets/smart-campus.png" alt="Campus GIS Map">
-          <p style="padding: 10px; text-align: center; color: #666;">Smart Campus & Spatial Planning</p>
+          <img src="../../assets/map-2.png" alt="Map 2">
+          <div class="gallery-caption">Environmental Mapping</div>
+        </div>
+        <div class="gallery-item">
+          <img src="../../assets/map-3.png" alt="Eldoret Map">
+          <div class="gallery-caption">Urban Planning - Eldoret</div>
+        </div>
+        <div class="gallery-item">
+          <img src="../../assets/map-4.png" alt="Keter Map 1">
+          <div class="gallery-caption">Climate Risk Assessment</div>
+        </div>
+        <div class="gallery-item">
+          <img src="../../assets/map-5.png" alt="Narok Map 2">
+          <div class="gallery-caption">Vulnerability Analysis - Narok</div>
+        </div>
+        <div class="gallery-item">
+          <img src="../../assets/map-6.png" alt="Narok Map 4">
+          <div class="gallery-caption">Hazard Mapping - Narok</div>
         </div>
       </div>
     </section>
