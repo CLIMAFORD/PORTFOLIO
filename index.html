@@ -4,27 +4,148 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Harrison Akello — Geospatial Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles/main.css">
   </head>
 
   <body>
-    <nav class="nav">
-      <div class="container nav-inner">
-        <a class="brand" href="index.html">Harrison Akello</a>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects/index.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <!-- Header & Navigation -->
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <a href="#home" class="logo">Harrison <span>Akello</span></a>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
       </div>
-    </nav>
+    </header>
 
-    <main class="container">
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Hi, I'm <span class="highlight">Harrison Akello</span></h1>
+          <p class="lead">GIS Analyst | Remote Sensing Expert | Researcher | Data Analyst | Climate Champion<br>Maseno University • Kenya</p>
+          <p><a href="mailto:akelloharry1121@gmail.com" class="btn">akelloharry1121@gmail.com</a> <a class="btn" href="projects/index.html">Projects</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>About Me</h2>
+        </div>
+        <div class="about-content">
+          <div class="about-img">
+            <img src="assets/profile.jpg" alt="Harrison Akello">
+          </div>
+          <div class="about-text">
+            <h3>Geospatial Information Science Student</h3>
+            <p>I am passionate about harnessing spatial data, remote sensing, and GeoAI to address environmental and urban challenges. My work focuses on applying GIS, data analytics, and spatial modeling to real-world problems such as air quality mapping, climate vulnerability assessment, and urban resilience planning.</p>
+            <p>Tools & technologies: QGIS, Google Earth Engine, Python (GeoPandas, Rasterio), Leaflet.js, Sentinel/Landsat/MODIS.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="section-title">
+          <h2>Featured Projects</h2>
+        </div>
+        <div class="portfolio-grid">
+          <div class="portfolio-item" data-category="geoai">
+            <div class="portfolio-img"><img src="assets/profile.jpg" alt="GeoAI Air Quality"></div>
+            <div class="portfolio-info">
+              <h3>GeoAI Air Quality Mapping</h3>
+              <p>Satellite-based PM2.5 estimation using AOD and ground sensors.</p>
+              <p><a href="projects/air-quality-geoai/index.html">View project</a></p>
+            </div>
+          </div>
+          <div class="portfolio-item" data-category="climate">
+            <div class="portfolio-img"><img src="assets/profile.jpg" alt="Climate Risk"></div>
+            <div class="portfolio-info">
+              <h3>Climate Risk & Urban Vulnerability Mapping</h3>
+              <p>GIS assessment of urban hazards, heat stress and flood exposure.</p>
+              <p><a href="projects/climate-risk-mapping/index.html">View project</a></p>
+            </div>
+          </div>
+          <div class="portfolio-item" data-category="campus">
+            <div class="portfolio-img"><img src="assets/profile.jpg" alt="Smart Campus GIS"></div>
+            <div class="portfolio-info">
+              <h3>Smart Campus GIS & Safety Mapping</h3>
+              <p>Campus spatial navigation and hotspot analysis with web GIS visualization.</p>
+              <p><a href="projects/smart-campus-gis/index.html">View project</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+      <div class="container">
+        <div class="section-title"><h2>Experience</h2></div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>Geospatial Research & Analysis</h3>
+              <p class="timeline-date">Ongoing</p>
+              <p>Work on air quality mapping, climate vulnerability assessment and GIS for urban resilience.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-title"><h2>Contact</h2></div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Get in touch</h3>
+            <div class="contact-details">
+              <div><i class="fas fa-envelope"></i><span>akelloharry1121@gmail.com</span></div>
+              <div><i class="fas fa-map-marker-alt"></i><span>Kenya</span></div>
+            </div>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form id="contactForm">
+              <input type="text" placeholder="Your Name" required>
+              <input type="email" placeholder="Your Email" required>
+              <input type="text" placeholder="Subject" required>
+              <textarea placeholder="Your Message" required></textarea>
+              <button type="submit" class="btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container"><p>© Harrison Akello — Geospatial Portfolio</p></div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
       <section class="hero card" aria-label="Introduction">
         <div class="hero-inner">
           <div class="hero-image">
