@@ -1,0 +1,43 @@
+@import './variables.css';
+
+/* Layout tokens */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+/* Header */
+.site-header {
+  background: linear-gradient(90deg, rgba(15,181,163,0.06), rgba(255,209,102,0.03));
+  border-bottom: 1px solid rgba(11,18,32,0.04);
+  padding: 2rem 0;
+}
+.site-header h1 {
+  margin: 0 0 0.25rem 0;
+  color: var(--text);
+}
+.headline { margin: 0; color: var(--muted); }
+.location { margin: .25rem 0 1rem 0; color: var(--muted); }
+.contact { display: flex; gap: 0.75rem; align-items: center; }
+.link { color: var(--primary); text-decoration: none; }
+
+/* Cards */
+.card { margin: 1rem 0; }
+.card h2 { margin-top: 0; color: var(--primary-700); }
+
+/* Grid for skills */
+.grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); gap: 1rem; }
+
+.projects { list-style: none; padding: 0; margin: 0; }
+.projects li { margin: .5rem 0; }
+
+.btn { font-weight: 600; }
+
+/* Footer */
+.site-footer { padding: 1rem 0; text-align: center; color: var(--muted); font-size: .9rem; }
+
+/* Responsive */
+@media (max-width: 640px) {
+  .contact { flex-direction: column; align-items: flex-start; gap: .5rem; }
+}
