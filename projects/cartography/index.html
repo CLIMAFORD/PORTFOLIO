@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cartography & Map Design</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <style>
+    .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 20px; padding: 20px 0; }
+    .gallery-item { border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: all 0.3s ease; }
+    .gallery-item:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.15); }
+    .gallery-item img { width: 100%; height: 300px; object-fit: cover; display: block; }
+  </style>
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="../../index.html" class="logo">Harrison <span>Akello</span></a>
+        <ul class="nav-links">
+          <li><a href="../../index.html#home">Home</a></li>
+          <li><a href="../../index.html#about">About</a></li>
+          <li><a href="../../index.html#portfolio">Projects</a></li>
+          <li><a href="../../index.html#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 100px;">
+    <section class="card">
+      <h1>Cartography & Map Design</h1>
+      <p>A collection of cartographic outputs showcasing map design, spatial visualization, and best-practice cartography for geospatial analysis and environmental management.</p>
+      
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="../../assets/air-quality.png" alt="Air Quality Map">
+          <p style="padding: 10px; text-align: center; color: #666;">Air Quality & Environmental Mapping</p>
+        </div>
+        <div class="gallery-item">
+          <img src="../../assets/climate-risk.png" alt="Climate Risk Map">
+          <p style="padding: 10px; text-align: center; color: #666;">Climate Risk & Vulnerability Assessment</p>
+        </div>
+        <div class="gallery-item">
+          <img src="../../assets/smart-campus.png" alt="Campus GIS Map">
+          <p style="padding: 10px; text-align: center; color: #666;">Smart Campus & Spatial Planning</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container"><p>© Harrison Akello — Geospatial Portfolio</p></div>
+  </footer>
+
+  <script src="../../scripts/main.js"></script>
+</body>
+</html>
