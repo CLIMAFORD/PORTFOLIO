@@ -142,6 +142,11 @@ header { background-color: white; box-shadow: var(--shadow); position: fixed; wi
 .portfolio-info h3 { margin-bottom: 10px; color: var(--primary-color); }
 .portfolio-info p { color: var(--text-light); }
 
+/* Project status badge */
+.project-status { margin-top: 10px; }
+.badge { display: inline-block; padding: 6px 10px; border-radius: 999px; font-weight: 700; font-size: 0.85rem; }
+.badge.ongoing { background: rgba(52,152,219,0.10); color: var(--secondary-color); border: 1px solid rgba(52,152,219,0.15); }
+
 /* Experience Section */
 .timeline { position: relative; max-width: 800px; margin: 0 auto; }
 .timeline::after { content: ''; position: absolute; width: 6px; background-color: var(--secondary-color); top: 0; bottom: 0; left: 50%; margin-left: -3px; }
