@@ -102,8 +102,7 @@ header { background-color: white; box-shadow: var(--shadow); position: fixed; wi
 .nav-links a:hover { color: var(--secondary-color); }
 .mobile-menu-btn { display: none; font-size: 1.5rem; cursor: pointer; position: relative; z-index: 1101; padding: 6px; }
 
-/* Hero Section */
-.hero { background: linear-gradient(135deg, var(--primary-color) 0%, #1a2530 100%); color: white; padding: 180px 0 100px; text-align: center; }
+.hero { background: linear-gradient(135deg, var(--primary-color) 0%, #1a2530 100%); color: white; padding: 120px 0 60px; text-align: center; }
 .hero-content h1 { font-size: 3.5rem; margin-bottom: 20px; line-height: 1.2; }
 .hero-content p { font-size: 1.3rem; max-width: 700px; margin: 0 auto 30px; color: rgba(255, 255, 255, 0.8); }
 .highlight { color: var(--secondary-color); }
@@ -186,6 +185,19 @@ footer { background-color: #1a2530; color: white; text-align: center; padding: 3
     .timeline-item { width: 100%; padding-left: 70px; padding-right: 25px; }
     .timeline-item:nth-child(even) { left: 0; }
     .timeline-item:nth-child(odd)::after, .timeline-item:nth-child(even)::after { left: 18px; }
+}
+
+/* About subsections and column-ish layout */
+.about-subsection { padding: 30px 0; border-top: 1px solid rgba(0,0,0,0.04); display: flex; flex-direction: column; gap: 16px; align-items: flex-start; }
+.skills-columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 18px; width: 100%; }
+.featured-projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; padding: 0; margin: 0; }
+.featured-projects li { background: #fff; padding: 12px 14px; border-radius: 8px; box-shadow: var(--shadow); list-style: none; }
+.education-section { display:flex; flex-direction: column; gap: 8px; }
+
+@media (max-width: 992px) {
+  .about-subsection, .skills-columns, .featured-projects, .education-section { text-align: center; align-items: center; }
+  .skills-columns { grid-template-columns: 1fr; }
+  .featured-projects { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 768px) {
