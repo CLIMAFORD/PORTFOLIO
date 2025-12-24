@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>About — Harrison Akello</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -11,17 +12,24 @@
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-  <nav class="nav">
-    <div class="container nav-inner">
-      <a class="brand" href="index.html">Harrison Akello</a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects/index.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+  <!-- Header & Navigation -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">Harrison <span>Akello</span></a>
+        <ul class="nav-links">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#portfolio">Projects</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
     </div>
-  </nav>
+  </header>
 
   <main class="container">
     <section class="hero card" aria-label="Introduction">
@@ -52,6 +60,8 @@
       </p>
     </section>
   </main>
+
+  <script src="scripts/main.js"></script>
 
   <footer class="site-footer muted">
     <div class="container">© Harrison Akello — Geospatial Portfolio</div>
