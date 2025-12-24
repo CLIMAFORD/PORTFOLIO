@@ -100,7 +100,7 @@ header { background-color: white; box-shadow: var(--shadow); position: fixed; wi
 .nav-links { display: flex; gap: 30px; }
 .nav-links a { font-weight: 600; transition: var(--transition); }
 .nav-links a:hover { color: var(--secondary-color); }
-.mobile-menu-btn { display: none; font-size: 1.5rem; cursor: pointer; }
+.mobile-menu-btn { display: none; font-size: 1.5rem; cursor: pointer; position: relative; z-index: 1101; padding: 6px; }
 
 /* Hero Section */
 .hero { background: linear-gradient(135deg, var(--primary-color) 0%, #1a2530 100%); color: white; padding: 180px 0 100px; text-align: center; }

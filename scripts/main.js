@@ -2,12 +2,17 @@
 const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
 const navLinks = document.querySelector('.nav-links');
 if (mobileMenuBtn && navLinks) {
-  mobileMenuBtn.addEventListener('click', () => {
+  const toggleNav = (e) => {
+    // support both touch and click
+    if (e) e.preventDefault();
     navLinks.classList.toggle('active');
     const icon = mobileMenuBtn.querySelector('i');
     if (icon) icon.classList.toggle('fa-times');
     mobileMenuBtn.setAttribute('aria-expanded', navLinks.classList.contains('active'));
-  });
+  };
+
+  mobileMenuBtn.addEventListener('click', toggleNav);
+  mobileMenuBtn.addEventListener('touchstart', toggleNav, { passive: false });
 
   // Close mobile menu when clicking a link
   navLinks.querySelectorAll('a').forEach(link => {
